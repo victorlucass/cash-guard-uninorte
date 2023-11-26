@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
 
@@ -72,7 +73,7 @@ export const MenuContainer = styled.nav`
     margin-top: 50px;
 `;
 
-export const MenuItemLink = styled.a`
+export const MenuItemLink = styled(NavLink)`
     color: ${props => props.theme.colors.info};
     text-decoration: none;
 
